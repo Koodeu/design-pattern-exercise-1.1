@@ -6,7 +6,7 @@ public class Main {
 //        System.out.println(classicBurger);
 //        System.out.println(vegeBurger);
 
-        Burger megaBurger = new Burger.HamburgerBuilder(BreadType.BRIOCHE, MeatType.MEAT, Sauce.SPICY)
+        Burger megaBurger = new Burger.BurgerBuilder(BreadType.BRIOCHE, MeatType.MEAT, Sauce.SPICY)
                 .withBacon(true)
                 .withCheese(true)
                 .withJalapeno(true)

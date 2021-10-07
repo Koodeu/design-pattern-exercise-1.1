@@ -139,19 +139,19 @@ public class Burger {
 
 
 
-    public  Burger(HamburgerBuilder hamburgerBuilder){
-        this.cheese= hamburgerBuilder.cheese;
-        this.jalapeno= hamburgerBuilder.jalapeno;
-        this.tomato= hamburgerBuilder.tomato;
-        this.lettuce= hamburgerBuilder.lettuce;
-        this.pickle= hamburgerBuilder.pickle;
-        this.bacon= hamburgerBuilder.bacon;
-        this.onion= hamburgerBuilder.onion;
-        this.pineapple= hamburgerBuilder.pineapple;
+    public  Burger(BurgerBuilder BurgerBuilder){
+        this.cheese= BurgerBuilder.cheese;
+        this.jalapeno= BurgerBuilder.jalapeno;
+        this.tomato= BurgerBuilder.tomato;
+        this.lettuce= BurgerBuilder.lettuce;
+        this.pickle= BurgerBuilder.pickle;
+        this.bacon= BurgerBuilder.bacon;
+        this.onion= BurgerBuilder.onion;
+        this.pineapple= BurgerBuilder.pineapple;
 
     }
 
-    public static class HamburgerBuilder{
+    public static class BurgerBuilder{
 
         private BreadType breadType;
         private MeatType meatType;
@@ -166,48 +166,48 @@ public class Burger {
         private boolean pineapple;
 
 
-        public HamburgerBuilder(final BreadType breadType, final MeatType meatType, final Sauce sauce) {
+        public BurgerBuilder(final BreadType breadType, final MeatType meatType, final Sauce sauce) {
             this.meatType = meatType;
             this.breadType = breadType;
             this.sauce = sauce;
         }
 
-        public HamburgerBuilder withCheese(boolean cheese) {
+        public BurgerBuilder withCheese(boolean cheese) {
             this.cheese = cheese;
             return this;
         }
 
-        public HamburgerBuilder withJalapeno(boolean jalapeno) {
+        public BurgerBuilder withJalapeno(boolean jalapeno) {
             this.jalapeno = jalapeno;
             return this;
         }
 
-        public HamburgerBuilder withTomato(boolean tomato) {
+        public BurgerBuilder withTomato(boolean tomato) {
             this.tomato = tomato;
             return this;
         }
 
-        public HamburgerBuilder withLettuce(boolean lettuce) {
+        public BurgerBuilder withLettuce(boolean lettuce) {
             this.lettuce = lettuce;
             return this;
         }
 
-        public HamburgerBuilder withPickle(boolean pickle) {
+        public BurgerBuilder withPickle(boolean pickle) {
             this.pickle = pickle;
             return this;
         }
 
-        public HamburgerBuilder withBacon(boolean bacon) {
+        public BurgerBuilder withBacon(boolean bacon) {
             this.bacon = bacon;
             return this;
         }
 
-        public HamburgerBuilder withOnion(boolean onion) {
+        public BurgerBuilder withOnion(boolean onion) {
             this.onion = onion;
             return this;
         }
 
-        public HamburgerBuilder withPineapple(boolean pineapple) {
+        public BurgerBuilder withPineapple(boolean pineapple) {
             this.pineapple = pineapple;
             return this;
         }
